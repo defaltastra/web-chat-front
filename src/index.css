@@ -1,0 +1,110 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+  /* Change the font family for better readability */
+  background-color: #1e1e1e;
+  /* Dark solid background color */
+}
+
+.background {
+  width: 100vw;
+  /* Make background container full width */
+  height: 100vh;
+  /* Make background container full height */
+  background: linear-gradient(75deg,
+      rgb(40, 43, 54) 0%,
+      /* Start color of gradient */
+      rgb(40, 43, 54) 50%,
+      /* Middle color of gradient */
+      rgb(40, 43, 54, 0.8) 100%
+      /* End color of gradient with 0.8 opacity */
+    );
+  display: table-cell;
+  /* Make the container behave like a table cell */
+  vertical-align: middle;
+  /* Vertically center content */
+}
+
+
+.form-card {
+  width: 80%;
+  /* Adjusted width for better centering */
+  max-width: 350px;
+  padding: 40px;
+  /* Adjusted padding for better spacing */
+  background-color: #2b2b2b;
+  /* Darker background color for the form */
+  border-radius: 8px;
+  /* Add border radius for rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add box-shadow for depth effect */
+}
+
+.form-title {
+  font-size: 24px;
+  /* Reduced font size for better visual hierarchy */
+  font-weight: 600;
+  /* Reduced font weight for better readability */
+  color: #ffffff;
+  /* White text color */
+  margin-bottom: 16px;
+  /* Adjusted margin for better spacing */
+}
+
+.form-subtitle {
+  font-size: 14px;
+  /* Reduced font size for better visual hierarchy */
+  color: #afafaf;
+  /* Lighter text color */
+  margin-bottom: 24px;
+  /* Adjusted margin for better spacing */
+}
+
+.auth-label {
+  font-size: 12px;
+  /* Reduced font size for better readability */
+  color: #afafaf;
+  /* Lighter text color */
+}
+
+.auth-input {
+  background: #3e404b;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  /* Adjusted border radius for consistency */
+  padding: 12px 16px;
+  /* Adjusted padding for better spacing */
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.auth-button {
+  width: 100%;
+  height: 48px;
+  /* Reduced button height for better proportion */
+  color: white;
+  background: linear-gradient(45deg, #fa541c, #ff8b23);
+  /* Gradient background */
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-button:hover {
+  filter: brightness(110%);
+  /* Adjusted brightness on hover for visual feedback */
+}
+
+/* Add styling for error messages */
+.auth-error {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
